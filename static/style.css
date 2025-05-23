@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light dark;
+}
+
+.main {
+  max-width: 54em;
+  margin: 4em auto;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+div.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.blink-on {
+  height: 20em;
+  background-color: light-dark(black, white);
+}
+
+div.blink-off {
+  height: 20em;
+  background-color: light-dark(white, black);
+}
+
+audio {
+  width: 100%;
+}
+
+div.file-picker {
+  text-align: center;
+  padding: 1em;
+}
+
+button {
+  padding: 8pt;
+  border: 0px;
+  border-radius: 4pt;
+}
+
+div.loader {
+  border: 8px solid light-dark(#00000020, #ffffff20);
+  border-top: 8px solid light-dark(#00a3ff, #00a3ff);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
